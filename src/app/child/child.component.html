@@ -1,0 +1,6 @@
+@for(data of data1;track data){
+    <div class="card">
+        <h3>{{data.name}}</h3>
+       <p [ngClass]="{'isGreen':data.version >= 6}">{{data.language}}</p> 
+    </div>
+}
